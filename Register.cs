@@ -34,5 +34,11 @@ namespace PRG2X1_Milestone
             LblTick.ForeColor = System.Drawing.Color.Red;
 
         }
+
+        private void label1_MouseDown(object sender, MouseEventArgs e)
+        {
+            txtPass1.PasswordChar = '\0';
+            txtPass2.PasswordChar = '\0';
+        }
     }
 }
