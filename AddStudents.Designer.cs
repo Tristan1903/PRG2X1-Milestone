@@ -49,6 +49,7 @@ namespace PRG2X1_Milestone
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -225,6 +226,15 @@ namespace PRG2X1_Milestone
             this.button1.Text = "Upload Image";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(392, 522);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(135, 54);
+            this.button2.TabIndex = 20;
+            this.button2.Text = "Add to Database";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
             // AddStudents
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -232,6 +242,7 @@ namespace PRG2X1_Milestone
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(598, 599);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtCodes);
@@ -280,5 +291,6 @@ namespace PRG2X1_Milestone
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
     }
 }
