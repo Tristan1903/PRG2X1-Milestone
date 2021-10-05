@@ -1,7 +1,7 @@
 ﻿
 namespace PRG2X1_Milestone
 {
-    partial class Form1
+    partial class Welcome
     {
         /// <summary>
         ///  Required designer variable.
@@ -29,7 +29,7 @@ namespace PRG2X1_Milestone
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Welcome));
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -91,7 +91,7 @@ namespace PRG2X1_Milestone
             this.button1.Text = "Login";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // Form1
+            // Welcome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -103,8 +103,8 @@ namespace PRG2X1_Milestone
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
-            this.Name = "Form1";
-            this.Text = "Form1";
+            this.Name = "Welcome";
+            this.Text = "Welcome";
             this.ResumeLayout(false);
             this.PerformLayout();
 
