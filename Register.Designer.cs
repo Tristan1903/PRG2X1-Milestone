@@ -39,7 +39,7 @@ namespace PRG2X1_Milestone
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.LblTick = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblShow = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
@@ -50,6 +50,7 @@ namespace PRG2X1_Milestone
             this.button1.TabIndex = 0;
             this.button1.Text = "Complete";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox1
             // 
@@ -132,17 +133,17 @@ namespace PRG2X1_Milestone
             this.LblTick.Size = new System.Drawing.Size(0, 15);
             this.LblTick.TabIndex = 8;
             // 
-            // label1
+            // lblShow
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(291, 149);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(36, 15);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Show";
-            this.label1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label1_MouseDown);
+            this.lblShow.AutoSize = true;
+            this.lblShow.BackColor = System.Drawing.Color.Transparent;
+            this.lblShow.ForeColor = System.Drawing.Color.White;
+            this.lblShow.Location = new System.Drawing.Point(291, 149);
+            this.lblShow.Name = "lblShow";
+            this.lblShow.Size = new System.Drawing.Size(36, 15);
+            this.lblShow.TabIndex = 9;
+            this.lblShow.Text = "Show";
+            this.lblShow.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label1_MouseDown);
             // 
             // Register
             // 
@@ -151,7 +152,7 @@ namespace PRG2X1_Milestone
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(405, 279);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblShow);
             this.Controls.Add(this.LblTick);
             this.Controls.Add(this.LblInfo);
             this.Controls.Add(this.txtPass1);
@@ -179,6 +180,6 @@ namespace PRG2X1_Milestone
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label LblTick;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblShow;
     }
 }

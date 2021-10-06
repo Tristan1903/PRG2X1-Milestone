@@ -27,11 +27,17 @@ namespace PRG2X1_Milestone
 
         private void textBox3_TextChanged(object sender, EventArgs e)
         {
-            LblTick.Text = "\u2713";
-            LblTick.ForeColor = System.Drawing.Color.Green;
 
-            LblTick.Text = "X";
-            LblTick.ForeColor = System.Drawing.Color.Red;
+            if (txtPass1.Text == txtPass2.Text)
+            {
+                LblTick.Text = "\u2713";
+                LblTick.ForeColor = System.Drawing.Color.Green;
+            }
+            else
+            {
+                LblTick.Text = "X";
+                LblTick.ForeColor = System.Drawing.Color.Red;
+            }     
 
         }
 
@@ -39,6 +45,11 @@ namespace PRG2X1_Milestone
         {
             txtPass1.PasswordChar = '\0';
             txtPass2.PasswordChar = '\0';
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
