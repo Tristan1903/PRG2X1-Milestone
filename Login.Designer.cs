@@ -34,18 +34,20 @@ namespace PRG2X1_Milestone
             this.txtLGPass = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtLogUs = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(197, 203);
+            this.button1.Location = new System.Drawing.Point(279, 199);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(103, 35);
             this.button1.TabIndex = 0;
             this.button1.Text = "Login";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // txtLGPass
             // 
@@ -77,12 +79,12 @@ namespace PRG2X1_Milestone
             this.label2.TabIndex = 4;
             this.label2.Text = "Username";
             // 
-            // textBox2
+            // txtLogUs
             // 
-            this.textBox2.Location = new System.Drawing.Point(156, 81);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(206, 23);
-            this.textBox2.TabIndex = 3;
+            this.txtLogUs.Location = new System.Drawing.Point(156, 81);
+            this.txtLogUs.Name = "txtLogUs";
+            this.txtLogUs.Size = new System.Drawing.Size(206, 23);
+            this.txtLogUs.TabIndex = 3;
             // 
             // label3
             // 
@@ -96,6 +98,18 @@ namespace PRG2X1_Milestone
             this.label3.Text = "Show";
             this.label3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label3_MouseDown);
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.ForeColor = System.Drawing.Color.White;
+            this.label4.Location = new System.Drawing.Point(131, 209);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(133, 15);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "New User? Register here";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -103,9 +117,10 @@ namespace PRG2X1_Milestone
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(506, 311);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtLogUs);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtLGPass);
             this.Controls.Add(this.button1);
@@ -122,7 +137,8 @@ namespace PRG2X1_Milestone
         private System.Windows.Forms.TextBox txtLGPass;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtLogUs;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }

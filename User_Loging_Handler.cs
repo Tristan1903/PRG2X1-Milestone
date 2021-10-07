@@ -35,19 +35,12 @@ namespace PRG2X1_Milestone
             return message;
         }
 
-        public bool New_Account(string Username)
-        {
-            bool Unique = false;
-
-            
-
-            return Unique;
-        }
+        
 
         public void Login_Reader()
         {
-            StreamReader username_File = new StreamReader("../passwords.txt");
-            StreamReader pass_file = new StreamReader("../passwords.txt");
+            using StreamReader username_File = new StreamReader("usernames.txt");
+            using StreamReader pass_file = new StreamReader("passwords.txt");
             string read_User;
             string read_Pass;
             while ((read_User = username_File.ReadLine()) != null)

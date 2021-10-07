@@ -8,13 +8,23 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace PRG2X1_Milestone
 {
     public partial class Display : Form
     {
+        
         public Display()
         {
             InitializeComponent();
+        
+        }
+
+
+        private void btnStudents_Click(object sender, EventArgs e)
+        {
+            
+
         }
     }
 }
