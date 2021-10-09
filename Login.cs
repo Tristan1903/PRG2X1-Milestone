@@ -21,11 +21,6 @@ namespace PRG2X1_Milestone
             InitializeComponent();
         }
 
-        private void label3_MouseDown(object sender, MouseEventArgs e)
-        {
-            txtLGPass.PasswordChar = '\0';
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             string entered_username;
@@ -61,6 +56,20 @@ namespace PRG2X1_Milestone
             Register reg = new Register();
             this.Hide();
             reg.Show();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            if (label3.Text == "Show")
+            {
+                txtLGPass.PasswordChar = '\0';
+                label3.Text = "Hide";
+            }
+            else if (label3.Text == "Hide")
+            {
+                txtLGPass.PasswordChar = '*';
+                label3.Text = "Show";
+            }
         }
     }
 }

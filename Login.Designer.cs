@@ -96,7 +96,7 @@ namespace PRG2X1_Milestone
             this.label3.Size = new System.Drawing.Size(36, 15);
             this.label3.TabIndex = 10;
             this.label3.Text = "Show";
-            this.label3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.label3_MouseDown);
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label4
             // 

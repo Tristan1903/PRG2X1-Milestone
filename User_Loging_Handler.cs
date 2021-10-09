@@ -39,8 +39,8 @@ namespace PRG2X1_Milestone
 
         public void Login_Reader()
         {
-            using StreamReader username_File = new StreamReader("usernames.txt");
-            using StreamReader pass_file = new StreamReader("passwords.txt");
+            using StreamReader username_File = new StreamReader("../usernames.txt");
+            using StreamReader pass_file = new StreamReader("../passwords.txt");
             string read_User;
             string read_Pass;
             while ((read_User = username_File.ReadLine()) != null)

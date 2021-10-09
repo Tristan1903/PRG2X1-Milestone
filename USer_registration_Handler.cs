@@ -45,8 +45,8 @@ namespace PRG2X1_Milestone
 
         public void Registration_Writer()
         {
-            using StreamWriter swUser = new StreamWriter("usernames.txt", append: true);
-            using StreamWriter swPass = new StreamWriter("passwords.txt", append: true);
+            using StreamWriter swUser = new StreamWriter("../usernames.txt", append: true);
+            using StreamWriter swPass = new StreamWriter("../passwords.txt", append: true);
 
             swUser.WriteLine(RegUsername);
             swPass.WriteLine(RegPassword);
