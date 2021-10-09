@@ -47,10 +47,8 @@ namespace PRG2X1_Milestone
             this.label8 = new System.Windows.Forms.Label();
             this.txtDOB = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.txtimage = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lblname
@@ -68,14 +66,14 @@ namespace PRG2X1_Milestone
             // 
             this.btnSDName.Location = new System.Drawing.Point(261, 190);
             this.btnSDName.Name = "btnSDName";
-            this.btnSDName.Size = new System.Drawing.Size(100, 23);
+            this.btnSDName.Size = new System.Drawing.Size(116, 23);
             this.btnSDName.TabIndex = 1;
             // 
             // btnSDSurname
             // 
-            this.btnSDSurname.Location = new System.Drawing.Point(367, 190);
+            this.btnSDSurname.Location = new System.Drawing.Point(383, 190);
             this.btnSDSurname.Name = "btnSDSurname";
-            this.btnSDSurname.Size = new System.Drawing.Size(100, 23);
+            this.btnSDSurname.Size = new System.Drawing.Size(103, 23);
             this.btnSDSurname.TabIndex = 3;
             // 
             // label2
@@ -83,7 +81,7 @@ namespace PRG2X1_Milestone
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(367, 171);
+            this.label2.Location = new System.Drawing.Point(382, 171);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(54, 15);
             this.label2.TabIndex = 2;
@@ -93,7 +91,7 @@ namespace PRG2X1_Milestone
             // 
             this.txtSdID.Location = new System.Drawing.Point(261, 137);
             this.txtSdID.Name = "txtSdID";
-            this.txtSdID.Size = new System.Drawing.Size(100, 23);
+            this.txtSdID.Size = new System.Drawing.Size(116, 23);
             this.txtSdID.TabIndex = 5;
             // 
             // label3
@@ -109,9 +107,9 @@ namespace PRG2X1_Milestone
             // 
             // txtPhone
             // 
-            this.txtPhone.Location = new System.Drawing.Point(261, 422);
+            this.txtPhone.Location = new System.Drawing.Point(263, 360);
             this.txtPhone.Name = "txtPhone";
-            this.txtPhone.Size = new System.Drawing.Size(100, 23);
+            this.txtPhone.Size = new System.Drawing.Size(116, 23);
             this.txtPhone.TabIndex = 11;
             // 
             // label4
@@ -119,7 +117,7 @@ namespace PRG2X1_Milestone
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.ForeColor = System.Drawing.Color.White;
-            this.label4.Location = new System.Drawing.Point(261, 403);
+            this.label4.Location = new System.Drawing.Point(263, 341);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(41, 15);
             this.label4.TabIndex = 10;
@@ -127,9 +125,9 @@ namespace PRG2X1_Milestone
             // 
             // txtGender
             // 
-            this.txtGender.Location = new System.Drawing.Point(367, 367);
+            this.txtGender.Location = new System.Drawing.Point(385, 305);
             this.txtGender.Name = "txtGender";
-            this.txtGender.Size = new System.Drawing.Size(100, 23);
+            this.txtGender.Size = new System.Drawing.Size(103, 23);
             this.txtGender.TabIndex = 9;
             // 
             // label5
@@ -137,7 +135,7 @@ namespace PRG2X1_Milestone
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.ForeColor = System.Drawing.Color.White;
-            this.label5.Location = new System.Drawing.Point(367, 348);
+            this.label5.Location = new System.Drawing.Point(384, 286);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(45, 15);
             this.label5.TabIndex = 8;
@@ -150,15 +148,15 @@ namespace PRG2X1_Milestone
             this.label6.ForeColor = System.Drawing.Color.White;
             this.label6.Location = new System.Drawing.Point(261, 232);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(40, 15);
+            this.label6.Size = new System.Drawing.Size(148, 15);
             this.label6.TabIndex = 6;
-            this.label6.Text = "Image";
+            this.label6.Text = "Image - Paste full file path ";
             // 
             // txtCodes
             // 
-            this.txtCodes.Location = new System.Drawing.Point(261, 469);
+            this.txtCodes.Location = new System.Drawing.Point(263, 407);
             this.txtCodes.Name = "txtCodes";
-            this.txtCodes.Size = new System.Drawing.Size(100, 23);
+            this.txtCodes.Size = new System.Drawing.Size(116, 23);
             this.txtCodes.TabIndex = 17;
             // 
             // label7
@@ -166,7 +164,7 @@ namespace PRG2X1_Milestone
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(261, 450);
+            this.label7.Location = new System.Drawing.Point(263, 388);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(80, 15);
             this.label7.TabIndex = 16;
@@ -174,9 +172,9 @@ namespace PRG2X1_Milestone
             // 
             // txtAddress
             // 
-            this.txtAddress.Location = new System.Drawing.Point(367, 420);
+            this.txtAddress.Location = new System.Drawing.Point(385, 358);
             this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(100, 23);
+            this.txtAddress.Size = new System.Drawing.Size(103, 23);
             this.txtAddress.TabIndex = 15;
             // 
             // label8
@@ -184,7 +182,7 @@ namespace PRG2X1_Milestone
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(367, 401);
+            this.label8.Location = new System.Drawing.Point(384, 339);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(49, 15);
             this.label8.TabIndex = 14;
@@ -192,9 +190,9 @@ namespace PRG2X1_Milestone
             // 
             // txtDOB
             // 
-            this.txtDOB.Location = new System.Drawing.Point(261, 367);
+            this.txtDOB.Location = new System.Drawing.Point(263, 305);
             this.txtDOB.Name = "txtDOB";
-            this.txtDOB.Size = new System.Drawing.Size(100, 23);
+            this.txtDOB.Size = new System.Drawing.Size(116, 23);
             this.txtDOB.TabIndex = 13;
             this.txtDOB.Text = "yyyy/mm/dd";
             // 
@@ -203,37 +201,27 @@ namespace PRG2X1_Milestone
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(261, 348);
+            this.label9.Location = new System.Drawing.Point(263, 286);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(73, 15);
             this.label9.TabIndex = 12;
             this.label9.Text = "Date of Birth";
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(261, 251);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 84);
-            this.pictureBox1.TabIndex = 18;
-            this.pictureBox1.TabStop = false;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(367, 251);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(100, 29);
-            this.button1.TabIndex = 19;
-            this.button1.Text = "Upload Image";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(392, 522);
+            this.button2.Location = new System.Drawing.Point(394, 460);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(135, 54);
             this.button2.TabIndex = 20;
             this.button2.Text = "Add to Database";
             this.button2.UseVisualStyleBackColor = true;
+            // 
+            // txtimage
+            // 
+            this.txtimage.Location = new System.Drawing.Point(263, 250);
+            this.txtimage.Name = "txtimage";
+            this.txtimage.Size = new System.Drawing.Size(234, 23);
+            this.txtimage.TabIndex = 21;
             // 
             // AddStudents
             // 
@@ -241,10 +229,9 @@ namespace PRG2X1_Milestone
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(598, 599);
+            this.ClientSize = new System.Drawing.Size(608, 529);
+            this.Controls.Add(this.txtimage);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.txtCodes);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtAddress);
@@ -264,7 +251,6 @@ namespace PRG2X1_Milestone
             this.Controls.Add(this.lblname);
             this.Name = "AddStudents";
             this.Text = "Add Students";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -289,8 +275,7 @@ namespace PRG2X1_Milestone
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtDOB;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox txtimage;
     }
 }
