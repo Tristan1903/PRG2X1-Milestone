@@ -68,7 +68,16 @@ namespace PRG2X1_Milestone
                 {
                     Password_Main = txtPass1.Text;
                     User_Creation.Set_Values(Username, Password_Main);
-                    User_Creation.Registration_Writer();
+
+                    try
+                    {
+                        User_Creation.Registration_Writer();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Failed" + ex.Message);
+                    }
+                    
                     Switch_To_Login();
                 }
                 else

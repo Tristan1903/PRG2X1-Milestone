@@ -25,12 +25,20 @@ namespace PRG2X1_Milestone
         {
             string entered_username;
             string entered_password;
-            bool logged;
+            bool logged = false;
 
             entered_username = txtLogUs.Text;
             entered_password = txtLGPass.Text;
 
-            logged = login_process.Logining_in(entered_username,entered_password);
+            try
+            {
+                logged = login_process.Logining_in(entered_username,entered_password);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Failed" + ex.Message);
+            }
+            
 
             if (logged == true)
             {
