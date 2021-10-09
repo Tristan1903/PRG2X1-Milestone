@@ -12,23 +12,21 @@ namespace PRG2X1_Milestone
         string connectStr = "server=.;Initial Catalog=PRG2X1_Milestone_DB;Integrated Security=SSPI";
         public DataHandler() { }
 
-        public DataTable getStudents()
-        {
-            string query = @"SELECT * FROM Student";
+        public DataTable DisplayData(string query)
+        { 
             SqlDataAdapter datadapt = new SqlDataAdapter(query, connectStr);
             DataTable datatabl = new DataTable();
             datadapt.Fill(datatabl);
             return datatabl;
         }
 
-        public DataTable getModules()
+        public void UpdateData(string query)
         {
-            string query = @"SELECT * FROM Modules";
-            SqlDataAdapter datadapt = new SqlDataAdapter(query, connectStr);
-            DataTable datatabl = new DataTable();
-            datadapt.Fill(datatabl);
-            return datatabl;
+            SqlConnection connect = new SqlConnection();
+            connect.Open();
+            SqlCommand cmd = new SqlCommand(query,connect);
+            cmd.ExecuteNonQuery();
+            connect.Close();
         }
-
     }
 }
