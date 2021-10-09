@@ -13,7 +13,7 @@ namespace PRG2X1_Milestone
 {
     public partial class Display : Form
     {
-        string connectStr = "server=.;Initial Catalog=NORTHWND;Integrated Security=SSPI";
+        string connectStr = "server=.;Initial Catalog=PRG2x1_Milestone_DB;Integrated Security=SSPI";
         SqlConnection con;
         public Display()
         {
@@ -25,7 +25,7 @@ namespace PRG2X1_Milestone
         private void btnStudents_Click(object sender, EventArgs e)
         {
             con.Open();
-            SqlCommand cmd = new SqlCommand(@"SELECT * FROM Categories", con);
+            SqlCommand cmd = new SqlCommand(@"SELECT * FROM Student", con);
             SqlDataReader wow = cmd.ExecuteReader();
             BindingSource source = new BindingSource();
             source.DataSource = wow;
