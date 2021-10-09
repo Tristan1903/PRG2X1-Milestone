@@ -30,6 +30,8 @@ namespace PRG2X1_Milestone
             BindingSource source = new BindingSource();
             source.DataSource = wow;
             dataGridView1.DataSource = source;
+            dataGridView1.AutoResizeColumns();
+            dataGridView1.AutoResizeRows();
             con.Close();
             //dataGridView1.DataSource = handlerobj.getStudents();
         }
