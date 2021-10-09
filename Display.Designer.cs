@@ -53,7 +53,7 @@ namespace PRG2X1_Milestone
             this.dataGridView1.Location = new System.Drawing.Point(102, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(896, 481);
+            this.dataGridView1.Size = new System.Drawing.Size(959, 481);
             this.dataGridView1.TabIndex = 1;
             // 
             // btnStudents
@@ -91,7 +91,7 @@ namespace PRG2X1_Milestone
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1010, 504);
+            this.ClientSize = new System.Drawing.Size(1073, 504);
             this.Controls.Add(this.Btnadd);
             this.Controls.Add(this.btnModules);
             this.Controls.Add(this.btnStudents);
