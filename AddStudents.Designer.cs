@@ -31,8 +31,8 @@ namespace PRG2X1_Milestone
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddStudents));
             this.lblname = new System.Windows.Forms.Label();
-            this.btnSDName = new System.Windows.Forms.TextBox();
-            this.btnSDSurname = new System.Windows.Forms.TextBox();
+            this.txtSDName = new System.Windows.Forms.TextBox();
+            this.txtSDSurname = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtSdID = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -62,19 +62,19 @@ namespace PRG2X1_Milestone
             this.lblname.TabIndex = 0;
             this.lblname.Text = "Name";
             // 
-            // btnSDName
+            // txtSDName
             // 
-            this.btnSDName.Location = new System.Drawing.Point(261, 190);
-            this.btnSDName.Name = "btnSDName";
-            this.btnSDName.Size = new System.Drawing.Size(116, 23);
-            this.btnSDName.TabIndex = 1;
+            this.txtSDName.Location = new System.Drawing.Point(261, 190);
+            this.txtSDName.Name = "txtSDName";
+            this.txtSDName.Size = new System.Drawing.Size(116, 23);
+            this.txtSDName.TabIndex = 1;
             // 
-            // btnSDSurname
+            // txtSDSurname
             // 
-            this.btnSDSurname.Location = new System.Drawing.Point(383, 190);
-            this.btnSDSurname.Name = "btnSDSurname";
-            this.btnSDSurname.Size = new System.Drawing.Size(103, 23);
-            this.btnSDSurname.TabIndex = 3;
+            this.txtSDSurname.Location = new System.Drawing.Point(383, 190);
+            this.txtSDSurname.Name = "txtSDSurname";
+            this.txtSDSurname.Size = new System.Drawing.Size(103, 23);
+            this.txtSDSurname.TabIndex = 3;
             // 
             // label2
             // 
@@ -215,6 +215,7 @@ namespace PRG2X1_Milestone
             this.button2.TabIndex = 20;
             this.button2.Text = "Add to Database";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // txtimage
             // 
@@ -245,9 +246,9 @@ namespace PRG2X1_Milestone
             this.Controls.Add(this.label6);
             this.Controls.Add(this.txtSdID);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.btnSDSurname);
+            this.Controls.Add(this.txtSDSurname);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.btnSDName);
+            this.Controls.Add(this.txtSDName);
             this.Controls.Add(this.lblname);
             this.Name = "AddStudents";
             this.Text = "Add Students";
@@ -259,8 +260,8 @@ namespace PRG2X1_Milestone
         #endregion
 
         private System.Windows.Forms.Label lblname;
-        private System.Windows.Forms.TextBox btnSDName;
-        private System.Windows.Forms.TextBox btnSDSurname;
+        private System.Windows.Forms.TextBox txtSDName;
+        private System.Windows.Forms.TextBox txtSDSurname;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtSdID;
         private System.Windows.Forms.Label label3;
