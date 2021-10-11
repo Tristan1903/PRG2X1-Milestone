@@ -25,7 +25,7 @@ namespace PRG2X1_Milestone
         {
             try
             {
-                dataGridView1.DataSource = handlerobj.DisplayData(@"SELECT * FROM Student");
+                dataGridView1.DataSource = handlerobj.DisplayStudents();
             }
             catch(Exception ex)
             {
@@ -37,7 +37,7 @@ namespace PRG2X1_Milestone
         {
             try
             {
-                dataGridView1.DataSource = handlerobj.DisplayData(@"SELECT * FROM Modules");
+                dataGridView1.DataSource = handlerobj.DisplayModules();
             }
             catch (Exception ex)
             {

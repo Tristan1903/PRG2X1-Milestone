@@ -1,7 +1,7 @@
 ﻿
 namespace PRG2X1_Milestone
 {
-    partial class Form1
+    partial class Update
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace PRG2X1_Milestone
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Update));
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -121,6 +121,7 @@ namespace PRG2X1_Milestone
             this.button3.TabIndex = 5;
             this.button3.Text = "Update Student";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
@@ -131,6 +132,7 @@ namespace PRG2X1_Milestone
             this.button4.TabIndex = 6;
             this.button4.Text = "Update Module";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // label2
             // 
@@ -407,7 +409,7 @@ namespace PRG2X1_Milestone
             this.label15.TabIndex = 25;
             this.label15.Text = "Module Code";
             // 
-            // Form1
+            // Update
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -448,7 +450,7 @@ namespace PRG2X1_Milestone
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
-            this.Name = "Form1";
+            this.Name = "Update";
             this.Text = "Form1";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
