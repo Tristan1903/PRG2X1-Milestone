@@ -35,6 +35,7 @@ namespace PRG2X1_Milestone
             this.btnStudents = new System.Windows.Forms.Button();
             this.btnModules = new System.Windows.Forms.Button();
             this.Btnadd = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -83,6 +84,17 @@ namespace PRG2X1_Milestone
             this.Btnadd.Text = "Add";
             this.Btnadd.UseVisualStyleBackColor = true;
             // 
+            // btnDelete
+            // 
+            this.btnDelete.Location = new System.Drawing.Point(12, 441);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(75, 23);
+            this.btnDelete.TabIndex = 5;
+            this.btnDelete.Text = "Delete";
+            this.btnDelete.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
             // Display
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -90,6 +102,7 @@ namespace PRG2X1_Milestone
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1010, 504);
+            this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.Btnadd);
             this.Controls.Add(this.btnModules);
             this.Controls.Add(this.btnStudents);
@@ -109,5 +122,6 @@ namespace PRG2X1_Milestone
         private System.Windows.Forms.Button btnStudents;
         private System.Windows.Forms.Button btnModules;
         private System.Windows.Forms.Button Btnadd;
+        private System.Windows.Forms.Button btnDelete;
     }
 }

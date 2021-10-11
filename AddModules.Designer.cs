@@ -32,9 +32,9 @@ namespace PRG2X1_Milestone
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AddModules));
             this.txtMID = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.btnMdesc = new System.Windows.Forms.TextBox();
+            this.txtMdesc = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnMName = new System.Windows.Forms.TextBox();
+            this.txtMName = new System.Windows.Forms.TextBox();
             this.lblMname = new System.Windows.Forms.Label();
             this.txtMlink = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -59,12 +59,12 @@ namespace PRG2X1_Milestone
             this.label3.TabIndex = 10;
             this.label3.Text = "Module Code";
             // 
-            // btnMdesc
+            // txtMdesc
             // 
-            this.btnMdesc.Location = new System.Drawing.Point(250, 239);
-            this.btnMdesc.Name = "btnMdesc";
-            this.btnMdesc.Size = new System.Drawing.Size(100, 23);
-            this.btnMdesc.TabIndex = 9;
+            this.txtMdesc.Location = new System.Drawing.Point(250, 239);
+            this.txtMdesc.Name = "txtMdesc";
+            this.txtMdesc.Size = new System.Drawing.Size(100, 23);
+            this.txtMdesc.TabIndex = 9;
             // 
             // label2
             // 
@@ -77,12 +77,12 @@ namespace PRG2X1_Milestone
             this.label2.TabIndex = 8;
             this.label2.Text = "Module Description";
             // 
-            // btnMName
+            // txtMName
             // 
-            this.btnMName.Location = new System.Drawing.Point(250, 186);
-            this.btnMName.Name = "btnMName";
-            this.btnMName.Size = new System.Drawing.Size(100, 23);
-            this.btnMName.TabIndex = 7;
+            this.txtMName.Location = new System.Drawing.Point(250, 186);
+            this.txtMName.Name = "txtMName";
+            this.txtMName.Size = new System.Drawing.Size(100, 23);
+            this.txtMName.TabIndex = 7;
             // 
             // lblMname
             // 
@@ -121,6 +121,7 @@ namespace PRG2X1_Milestone
             this.button2.TabIndex = 21;
             this.button2.Text = "Add to Database";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // AddModules
             // 
@@ -128,15 +129,15 @@ namespace PRG2X1_Milestone
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(594, 518);
+            this.ClientSize = new System.Drawing.Size(601, 518);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.txtMlink);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtMID);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.btnMdesc);
+            this.Controls.Add(this.txtMdesc);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.btnMName);
+            this.Controls.Add(this.txtMName);
             this.Controls.Add(this.lblMname);
             this.Name = "AddModules";
             this.Text = "AddModules";
@@ -149,9 +150,9 @@ namespace PRG2X1_Milestone
 
         private System.Windows.Forms.TextBox txtMID;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox btnMdesc;
+        private System.Windows.Forms.TextBox txtMdesc;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox btnMName;
+        private System.Windows.Forms.TextBox txtMName;
         private System.Windows.Forms.Label lblMname;
         private System.Windows.Forms.TextBox txtMlink;
         private System.Windows.Forms.Label label1;

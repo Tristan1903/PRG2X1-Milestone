@@ -16,5 +16,22 @@ namespace PRG2X1_Milestone
         {
             InitializeComponent();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            AddToDatabase ATD = new AddToDatabase();
+            string Modulecode;
+            string ModuleName;
+            string ModuleDescription;
+            string ModuleLink;
+
+            Modulecode = txtMID.Text;
+            ModuleName = txtMName.Text;
+            ModuleDescription = txtMdesc.Text;
+            ModuleLink = txtMlink.Text;
+
+            ATD.Add_Modules(Modulecode, ModuleName, ModuleDescription, ModuleLink);
+
+        }
     }
 }

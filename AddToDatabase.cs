@@ -50,5 +50,30 @@ namespace PRG2X1_Milestone
 
             command.ExecuteNonQuery();
         }
+        
+        public void Add_Modules(string Modulecode, string ModuleName, string ModuleDescription, string ModuleLink)
+        {
+            con = new SqlConnection(connectStr);
+            string Modulecode_Add;
+            string ModuleName_Add;
+            string ModuleDescription_Add;
+            string ModuleLink_Add;
+
+
+            Modulecode_Add = Convert.ToString(Modulecode);
+            ModuleName_Add = ModuleName;
+            ModuleDescription_Add = ModuleDescription;
+            ModuleLink_Add = ModuleLink;
+            
+            String query = "INSERT INTO Module (Modulecode,ModuleName,ModuleDesription,ModuleLink) VALUES (@Modulecode,@Modulename,@Moduledescription,@Modulelink)";
+
+            SqlCommand command = new SqlCommand(query, con);
+            command.Parameters.AddWithValue("@Modulecode", Modulecode_Add);
+            command.Parameters.AddWithValue("@Modulename", ModuleName_Add);
+            command.Parameters.AddWithValue("@Moduledescription", ModuleDescription_Add);
+            command.Parameters.AddWithValue("@Modulelink", ModuleLink_Add);
+
+            command.ExecuteNonQuery();
+        }
     }
 }
