@@ -19,7 +19,7 @@ namespace PRG2X1_Milestone
 
         private void button2_Click(object sender, EventArgs e)
         {
-            AddToDatabase ATD = new AddToDatabase();
+            DataHandler ATD = new DataHandler();
             string Modulecode;
             string ModuleName;
             string ModuleDescription;
@@ -29,9 +29,22 @@ namespace PRG2X1_Milestone
             ModuleName = txtMName.Text;
             ModuleDescription = txtMdesc.Text;
             ModuleLink = txtMlink.Text;
-
-            ATD.Add_Modules(Modulecode, ModuleName, ModuleDescription, ModuleLink);
-
+            try
+            {
+                if (txtMID.Text == string.Empty || txtMName.Text == string.Empty || txtMdesc.Text == string.Empty || txtMlink.Text == string.Empty)
+                {
+                    throw new EmptyTextBoxException("Please Make sure all text boxes have values");
+                }
+                ATD.Add_Modules(Modulecode, ModuleName, ModuleDescription, ModuleLink);
+            }
+            catch (EmptyTextBoxException etb)
+            {
+                MessageBox.Show(etb.Message);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Failed to add Module : " + ex.Message);
+            }
         }
     }
 }

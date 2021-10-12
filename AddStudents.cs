@@ -19,7 +19,7 @@ namespace PRG2X1_Milestone
 
         private void button2_Click(object sender, EventArgs e)
         {
-            AddToDatabase AddStudent = new AddToDatabase();
+            DataHandler AddStudent = new DataHandler();
             string ID_Capture;
             string Name_Capture;
             string Surname_Capture;
@@ -39,9 +39,25 @@ namespace PRG2X1_Milestone
             Phone_Capture = txtPhone.Text;
             Address_Capture = txtAddress.Text;
             Course_Capture = txtCodes.Text;
-
-            AddStudent.Add_Student(ID_Capture, Name_Capture, Surname_Capture, Path_Capture, DateOBirth_Capture, Gender_Capture, Phone_Capture, Address_Capture, Course_Capture);
-            MessageBox.Show("Student succesfully added");
+            try
+            {
+                if (txtSdID.Text == string.Empty || txtSDName.Text == string.Empty || txtSDSurname.Text == string.Empty || txtimage.Text == string.Empty || txtDOB.Text == string.Empty ||
+                    txtGender.Text == string.Empty || txtPhone.Text == string.Empty || txtAddress.Text == string.Empty || txtCodes.Text == string.Empty)
+                {
+                    throw new EmptyTextBoxException("Please make sure all text boxes have values");
+                }
+                AddStudent.Add_Student(ID_Capture, Name_Capture, Surname_Capture, Path_Capture, DateOBirth_Capture, Gender_Capture, Phone_Capture, Address_Capture, Course_Capture);
+                MessageBox.Show("Student succesfully added");
+            }
+            catch(EmptyTextBoxException etb)
+            {
+                MessageBox.Show(etb.Message);
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Failed to add student : " +ex.Message);
+            }
+    
             Display open = new Display();
             this.Hide();
             open.Show();
