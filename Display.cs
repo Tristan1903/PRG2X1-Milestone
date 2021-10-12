@@ -10,13 +10,23 @@ using System.Windows.Forms;
 using Microsoft.VisualBasic;
 using System.Data.SqlClient;
 
+
 namespace PRG2X1_Milestone
 {
     public partial class Display : Form
     {
+        
         public Display()
         {
             InitializeComponent();
+        
+        }
+
+
+        private void btnStudents_Click(object sender, EventArgs e)
+        {
+            
+
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
