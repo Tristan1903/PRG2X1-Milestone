@@ -51,6 +51,7 @@ namespace PRG2X1_Milestone
 
         private void button2_Click(object sender, EventArgs e)
         {
+            button4.Enabled = true;
             txtMcodes.Enabled = true;
             txtMDescrip.Enabled = true;
             txtMLink.Enabled = true;
