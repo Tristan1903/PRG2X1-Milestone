@@ -17,7 +17,7 @@ namespace PRG2X1_Milestone
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Display());
+            Application.Run(new Welcome());
         }
     }
 }
