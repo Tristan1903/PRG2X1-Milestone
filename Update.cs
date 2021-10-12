@@ -95,6 +95,10 @@ namespace PRG2X1_Milestone
             {
                 MessageBox.Show("Failed to update Student : " + ex.Message);
             }
+            Display display_info = new Display();
+            this.Hide();
+            display_info.Show();
+
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -116,6 +120,10 @@ namespace PRG2X1_Milestone
             {
                 MessageBox.Show("Failed to update Module : " + ex.Message);
             }
+
+            Display display_info = new Display();
+            this.Hide();
+            display_info.Show();
         }
     }
 }

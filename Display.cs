@@ -75,5 +75,12 @@ namespace PRG2X1_Milestone
                 MessageBox.Show("Failed to load Modules : " + ex.Message);
             }
         }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            Update update_info = new Update();
+            update_info.Show();
+            this.Hide();
+        }
     }
 }
