@@ -49,8 +49,13 @@ namespace PRG2X1_Milestone
             string Password_Main;
             bool exsist;
 
+
+            User_Creation.create_File();
+
+
             Username = txtUser.Text;
             exsist = User_Creation.User_Exsistance(Username);
+            
             if (Validate() == false)
             {
                 MessageBox.Show("Invalid Username");

@@ -13,6 +13,20 @@ namespace PRG2X1_Milestone
         string GlPassword;
         bool user_exsits_Login;
         bool pass_correct;
+
+        public void create_File()
+        {                   
+            if (File.Exists("../usernames.txt") == false)
+            {
+                FileStream fs = File.Create("../usernames.txt");
+            }
+            
+            if (File.Exists("../passwords.txt") == false)
+            {
+                FileStream fs = File.Create("../passwords.txt");
+            }
+            
+        }
         
         public bool Logining_in(string Username, string Password)
         {
