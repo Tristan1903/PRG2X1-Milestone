@@ -35,6 +35,7 @@ namespace PRG2X1_Milestone
             this.btnStudents = new System.Windows.Forms.Button();
             this.btnModules = new System.Windows.Forms.Button();
             this.Btnadd = new System.Windows.Forms.Button();
+            this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -50,11 +51,11 @@ namespace PRG2X1_Milestone
             // 
             // dataGridView1
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridView1.Location = new System.Drawing.Point(102, 12);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 25;
-            this.dataGridView1.Size = new System.Drawing.Size(896, 481);
+            this.dataGridView1.Size = new System.Drawing.Size(959, 481);
             this.dataGridView1.TabIndex = 1;
             // 
             // btnStudents
@@ -65,6 +66,7 @@ namespace PRG2X1_Milestone
             this.btnStudents.TabIndex = 2;
             this.btnStudents.Text = "Students";
             this.btnStudents.UseVisualStyleBackColor = true;
+            this.btnStudents.Click += new System.EventHandler(this.btnStudents_Click);
             // 
             // btnModules
             // 
@@ -74,6 +76,7 @@ namespace PRG2X1_Milestone
             this.btnModules.TabIndex = 3;
             this.btnModules.Text = "Modules";
             this.btnModules.UseVisualStyleBackColor = true;
+            this.btnModules.Click += new System.EventHandler(this.btnModules_Click);
             // 
             // Btnadd
             // 
@@ -83,6 +86,15 @@ namespace PRG2X1_Milestone
             this.Btnadd.TabIndex = 4;
             this.Btnadd.Text = "Add";
             this.Btnadd.UseVisualStyleBackColor = true;
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Location = new System.Drawing.Point(12, 412);
+            this.btnUpdate.Name = "btnUpdate";
+            this.btnUpdate.Size = new System.Drawing.Size(75, 23);
+            this.btnUpdate.TabIndex = 6;
+            this.btnUpdate.Text = "Update";
+            this.btnUpdate.UseVisualStyleBackColor = true;
             // 
             // btnDelete
             // 
@@ -101,6 +113,8 @@ namespace PRG2X1_Milestone
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1073, 504);
+            this.Controls.Add(this.btnUpdate);
             this.ClientSize = new System.Drawing.Size(1010, 504);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.Btnadd);
@@ -122,6 +136,7 @@ namespace PRG2X1_Milestone
         private System.Windows.Forms.Button btnStudents;
         private System.Windows.Forms.Button btnModules;
         private System.Windows.Forms.Button Btnadd;
+        private System.Windows.Forms.Button btnUpdate;
         private System.Windows.Forms.Button btnDelete;
     }
 }

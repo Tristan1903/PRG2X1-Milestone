@@ -23,12 +23,7 @@ namespace PRG2X1_Milestone
         }
 
 
-        private void btnStudents_Click(object sender, EventArgs e)
-        {
-            
-
-        }
-
+        
         private void btnDelete_Click(object sender, EventArgs e)
         {
             string search;
@@ -52,6 +47,32 @@ namespace PRG2X1_Milestone
             {
                 MessageBox.Show("Failed" + error.Message);
 
+            }
+            
+        }
+
+        DataHandler handlerobj = new DataHandler();
+        private void btnStudents_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                dataGridView1.DataSource = handlerobj.DisplayStudents();
+            }
+            catch(Exception ex)
+            {
+                MessageBox.Show("Failed to load Students : " + ex.Message);
+            }
+        }
+
+        private void btnModules_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                dataGridView1.DataSource = handlerobj.DisplayModules();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Failed to load Modules : " + ex.Message);
             }
         }
     }
