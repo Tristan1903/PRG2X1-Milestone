@@ -82,5 +82,12 @@ namespace PRG2X1_Milestone
             update_info.Show();
             this.Hide();
         }
+
+        private void Btnadd_Click(object sender, EventArgs e)
+        {
+            Addmenu trans = new Addmenu();
+            trans.Show();
+            this.Hide();
+        }
     }
 }

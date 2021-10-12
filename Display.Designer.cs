@@ -86,6 +86,7 @@ namespace PRG2X1_Milestone
             this.Btnadd.TabIndex = 4;
             this.Btnadd.Text = "Add";
             this.Btnadd.UseVisualStyleBackColor = true;
+            this.Btnadd.Click += new System.EventHandler(this.Btnadd_Click);
             // 
             // btnUpdate
             // 

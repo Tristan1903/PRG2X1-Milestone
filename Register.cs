@@ -44,7 +44,7 @@ namespace PRG2X1_Milestone
 
         private void button1_Click(object sender, EventArgs e)
         {
-            User_registration_Handler User_Creation = new User_registration_Handler();
+            File_Handler User_Creation = new File_Handler();
             string Username;
             string Password_Main;
             bool exsist;

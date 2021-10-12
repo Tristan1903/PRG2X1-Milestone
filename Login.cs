@@ -13,7 +13,7 @@ namespace PRG2X1_Milestone
     public partial class Login : Form
     {
 
-        User_Loging_Handler login_process = new User_Loging_Handler();
+        File_Handler login_process = new File_Handler();
         Display success = new Display();
 
         public Login()

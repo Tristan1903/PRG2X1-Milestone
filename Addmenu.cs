@@ -16,5 +16,20 @@ namespace PRG2X1_Milestone
         {
             InitializeComponent();
         }
+
+        private void btnAModules_Click(object sender, EventArgs e)
+        {
+            AddModules add_modules = new AddModules();
+            this.Hide();
+            add_modules.Show();
+
+        }
+
+        private void btnAStudents_Click(object sender, EventArgs e)
+        {
+            AddStudents add_students = new AddStudents();
+            this.Hide();
+            add_students.Show();
+        }
     }
 }

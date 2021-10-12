@@ -42,6 +42,7 @@ namespace PRG2X1_Milestone
             this.btnAModules.TabIndex = 0;
             this.btnAModules.Text = "Modules";
             this.btnAModules.UseVisualStyleBackColor = true;
+            this.btnAModules.Click += new System.EventHandler(this.btnAModules_Click);
             // 
             // btnAStudents
             // 
@@ -51,6 +52,7 @@ namespace PRG2X1_Milestone
             this.btnAStudents.TabIndex = 1;
             this.btnAStudents.Text = "Students";
             this.btnAStudents.UseVisualStyleBackColor = true;
+            this.btnAStudents.Click += new System.EventHandler(this.btnAStudents_Click);
             // 
             // Addmenu
             // 
